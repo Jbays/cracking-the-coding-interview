@@ -4,7 +4,7 @@
   "description": "here i will do lots of hard toy problems.  :(",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha tests/*"
   },
   "repository": {
     "type": "git",

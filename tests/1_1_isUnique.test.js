@@ -8,9 +8,11 @@ describe('isUnique',()=>{
   const testCase2 = 'abcdefghijklmnoqqrstuvwxyz';
   //no repeats
   const testCase3 = 'abcdefghijklmnopqrstuvwxyz';
-  it('should determine if a string has all unique characters',()=>{
+  it('should return false if input string has all unique characters',()=>{
     expect(isUnique(testCase1)).to.equal(false);
     expect(isUnique(testCase2)).to.equal(false);
+  })
+  it('should return true if input string has all unique characters',()=>{
     expect(isUnique(testCase3)).to.equal(true);
   })
 })
