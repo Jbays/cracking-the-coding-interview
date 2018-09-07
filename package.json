@@ -1,0 +1,23 @@
+{
+  "name": "cracking-the-coding-interview",
+  "version": "1.0.0",
+  "description": "here i will do lots of hard toy problems.  :(",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jbays/cracking-the-coding-interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jbays/cracking-the-coding-interview/issues"
+  },
+  "homepage": "https://github.com/Jbays/cracking-the-coding-interview#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
