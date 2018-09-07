@@ -4,12 +4,8 @@
   hold additional characters, and that you are given the true length of the string.
 */
 
-const testCase1 = "Mr John Smith";
-const testCase2 = "how much would a woodchuck chuck if a woodchuck could chuck wood";
-
 function urlify(string){
   return string.split(' ').join('%20');
 }
 
-// console.log(urlify(testCase1));
-// console.log(urlify(testCase2));
+module.exports = urlify;

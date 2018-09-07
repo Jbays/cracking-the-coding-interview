@@ -10,13 +10,6 @@
   You can assume the string has only uppercase and lowercase letters (a-z).
 */
 
-//should return shortened string
-const testCase1 = 'aabcccccaaa';
-const testCase3 = 'XXXxxxyyyzzzaaaYYbb'
-
-//should return original string
-const testCase2 = 'abcdefghi';
-
 function stringCompression(string){
   let record = {};
   let output = '';
@@ -48,6 +41,4 @@ function stringCompression(string){
   return output.length < string.length ? output : string;
 }
 
-// console.log(stringCompression(testCase1));
-// console.log(stringCompression(testCase2));
-// console.log(stringCompression(testCase3));
+module.exports = stringCompression;
