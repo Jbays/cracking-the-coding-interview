@@ -11,36 +11,27 @@ class SinglyLinkedList{
     this.length = 0;
   }
 
-
-};
-
-SinglyLinkedList.prototype.push = (val)=> {
-  let newNode = new Node(val);
-  // console.log('this is newNode',newNode)
-
-  if ( !this.head ) {
-    // console.log('bingo!');
-    this.head = newNode;
-    this.tail = this.head;
+  appendNodeToTail(value){
+    let attachNewNode = new Node(value)
+    if ( this.head === null ) {
+      this.head = attachNewNode;
+    } else {
+      if ( this.head.next === null ) {
+        this.head.next = attachNewNode;
+      } else {
+        this.appendNodeHelper(this.head.next,attachNewNode);
+      }
+    }
+    this.length++;
   }
-  // console.log(this)
 
-  this.length++;
-  return this;
+  appendNodeHelper(node,attachNode){
+    while ( node.next !== null ) {
+      return this.appendNodeHelper(node.next,attachNode);
+    }
 
-  //handles first insertion point
-  // if ( this.tail === null ) {
-  //   this.head = val;
-  // } else {
-  //   //make the tail point to the old head
-  //   this.tail.next = this.head;
-  //   //replace the old head w/ new head
-  //   this.head = val;
-  // }
-  // this.length++;
+    node.next = attachNode;
+  }
 };
-
-
-
 
 module.exports = {Node,SinglyLinkedList};
