@@ -35,12 +35,32 @@ class SinglyLinkedList{
 
   deleteNodeOfVal(value){
     if ( this.head.next === null ) {
-      console.log('this is this.head',this.head);
       this.head = null;
+      this.length--;
+    } else {
+      this.deleteNodeHelper(this.head.next,value);
     }
-    this.length--;
   }
 
+  deleteNodeHelper(node,searchVal){
+    if ( node.val === searchVal ) {
+      if ( node.next === null ) {
+        node.val = null;
+        delete node.next;
+      } else {
+        node.val = node.next.val;
+        node.next = node.next.next ? node.next.next : null;
+      }
+      this.length--;
+      return node;
+    }
+
+    while ( node.next !== null ) {
+      return this.deleteNodeHelper(node.next,searchVal);
+    }
+
+    return null;
+  }
 };
 
 module.exports = {Node,SinglyLinkedList};
