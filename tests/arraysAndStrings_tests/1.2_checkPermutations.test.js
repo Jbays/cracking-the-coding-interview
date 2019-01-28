@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const checkPermutations = require('../../arrays_and_strings/1_2_checkPermutations');
+const checkPermutations = require('../../arrays_and_strings/1.2_checkPermutations');
 
 describe('checkPermutations', () => {
   //true

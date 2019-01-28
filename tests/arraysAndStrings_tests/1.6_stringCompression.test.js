@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const stringCompression = require('../../arrays_and_strings/1_6_stringCompression');
+const stringCompression = require('../../arrays_and_strings/1.6_stringCompression');
 
 describe('stringCompression', () => {
   //should return shortened string

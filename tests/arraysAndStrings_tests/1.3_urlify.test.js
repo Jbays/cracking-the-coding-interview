@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const urlify = require('../../arrays_and_strings/1_3_urlify');
+const urlify = require('../../arrays_and_strings/1.3_urlify');
 
 describe('urlify', () => {
   const testCase1 = "Mr John Smith";
