@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const isUnique = require('../arrays_and_strings/1_1_isUnique');
+const isUnique = require('../../arrays_and_strings/1_1_isUnique');
 
 describe('isUnique',()=>{
   //repeats c
