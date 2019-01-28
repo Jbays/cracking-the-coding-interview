@@ -8,9 +8,10 @@ class Node{
 class SinglyLinkedList{
   constructor(){
     this.head = null;
-    this.tail = null;
     this.length = 0;
   }
+
+
 };
 
 SinglyLinkedList.prototype.push = (val)=> {
@@ -18,11 +19,11 @@ SinglyLinkedList.prototype.push = (val)=> {
   // console.log('this is newNode',newNode)
 
   if ( !this.head ) {
-    console.log('bingo!');
+    // console.log('bingo!');
     this.head = newNode;
     this.tail = this.head;
   }
-  console.log(this)
+  // console.log(this)
 
   this.length++;
   return this;
@@ -39,31 +40,7 @@ SinglyLinkedList.prototype.push = (val)=> {
   // this.length++;
 };
 
-SinglyLinkedList.prototype.__getNodeAt = (index)=> {
-};
 
-SinglyLinkedList.prototype.clear = ()=> {
-};
 
-SinglyLinkedList.prototype.pop = ()=> {
-};
-
-SinglyLinkedList.prototype.unshift = (val)=> {
-};
-
-SinglyLinkedList.prototype.shift = ()=> {
-};
-
-SinglyLinkedList.prototype.get = (index)=> {
-};
-
-SinglyLinkedList.prototype.set = (index, val)=> {
-};
-
-SinglyLinkedList.prototype.remove = (index)=> {
-};
-
-SinglyLinkedList.prototype.reverse = ()=> {
-};
 
 module.exports = {Node,SinglyLinkedList};
