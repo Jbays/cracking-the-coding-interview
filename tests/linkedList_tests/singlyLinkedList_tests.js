@@ -56,8 +56,28 @@ describe('Singly Linked List',()=>{
         expect(myLinkedList.length).to.equal(4);
       })
     });
-    describe('',()=>{
+    describe('deleteNodeOfVal method should',()=>{
+      it('removes the node in a singlyLinkedList of length 1',()=>{
+        let myLinkedList = new singlyLinkedListCode.SinglyLinkedList();
+        myLinkedList.appendNodeToTail(3);
+        myLinkedList.deleteNodeOfVal(3);
+        console.log('myLinkedList>>>>',myLinkedList);
+        expect(myLinkedList.head).to.equal(null);
+        expect(myLinkedList.length).to.equal(0);
 
+      });
+      it('remove the node with value equal to input val',()=>{
+        let myLinkedList = new singlyLinkedListCode.SinglyLinkedList();
+        myLinkedList.appendNodeToTail(3);
+        myLinkedList.appendNodeToTail(5);
+        myLinkedList.appendNodeToTail(7);
+        myLinkedList.appendNodeToTail(9);
+        myLinkedList.deleteNodeOfVal(5);
+        expect(myLinkedList.head.val).to.equal(3);
+        expect(myLinkedList.head.next.val).to.equal(7);
+        expect(myLinkedList.head.next.next.val).to.equal(9);
+        expect(myLinkedList.length).to.equal(3);
+      })
     });
   })
 

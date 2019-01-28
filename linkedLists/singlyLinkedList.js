@@ -32,6 +32,15 @@ class SinglyLinkedList{
 
     node.next = attachNode;
   }
+
+  deleteNodeOfVal(value){
+    if ( this.head.next === null ) {
+      console.log('this is this.head',this.head);
+      this.head = null;
+    }
+    this.length--;
+  }
+
 };
 
 module.exports = {Node,SinglyLinkedList};
